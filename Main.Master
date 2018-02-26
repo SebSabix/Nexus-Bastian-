@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Nexus_Bastian.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Nexus Bastian</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Main.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="Velcome to Nexus Bastian - Your hub for tech news weekly" />
+    <meta name="keywords" content="Tech News, Hardware, Software, Nerd News, Science News" />
+    <meta content="BlendTrans(Duration=0.01)" http-equiv="Page-Exit" />
+
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div id="wrapper">
+    </div>
+    <div id="banner">
+    </div>
+    <div id="sidebar"> <!--Frågan om man ska ha sidebar??? #sidebar i css-->
+    </div>
+    <div id="navigation">
+    </div>
+     <div class="topnav">
+        <a class="active" href="Default.aspx">Home</a>
+        <a href="News.aspx">Gaming News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About this</a>
+
+        <!--<div class="search-container">  <!--SÖKFUNKTION
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>-->
+        
+        <a href="http://fz.se" class="button">Go to FZ</a>  <!--En knapp har skapats, med valfri URL-->
+                
+    </div> 
+    <div id="content_area">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+        <!--Detta gör att footern som ärver typsnittet X från Body i Main.ccs får färgen "White"-->
+        <p style="color: White;">   
+            All rights reserved.
+        </p>
+    </div>
+    </form>
+</body>
+</html>
